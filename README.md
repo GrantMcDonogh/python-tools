@@ -160,7 +160,7 @@ What the tool does and why it's useful.
 
 ## Usage
 \```bash
-python main.py <required> [--optional]
+uv run main.py <required> [--optional]
 \```
 
 ## Arguments
@@ -173,10 +173,10 @@ Description of what the tool outputs.
 ## Examples
 \```bash
 # Example 1: Basic usage
-python main.py "input value"
+uv run main.py "input value"
 
 # Example 2: JSON output
-python main.py "input" --format json
+uv run main.py "input" --format json
 \```
 ```
 

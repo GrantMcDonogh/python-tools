@@ -3,12 +3,12 @@
 URL Validator - Validates URLs and checks if they are well-formed.
 
 Usage:
-    python main.py <url> [--check-dns] [--format {text,json}] [--verbose]
+    uv run main.py <url> [--check-dns] [--format {text,json}] [--verbose]
 
 Examples:
-    python main.py "https://example.com"
-    python main.py "https://example.com" --check-dns
-    python main.py "https://example.com/api" --format json
+    uv run main.py "https://example.com"
+    uv run main.py "https://example.com" --check-dns
+    uv run main.py "https://example.com/api" --format json
 """
 
 import argparse
@@ -23,7 +23,7 @@ from urllib.parse import urlparse, ParseResult
 # Add _shared to path for common utilities
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / '_shared'))
 try:
-    from utils import output_result, setup_logging, log_verbose, log_error
+    from utils import output_result, setup_logging, log_verbose, log_error  # type: ignore[import-not-found]
 except ImportError:
     # Fallback implementations if _shared is not available
     def output_result(data: Any, fmt: str = 'text') -> None:

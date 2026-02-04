@@ -3,12 +3,12 @@
 Tool Name - Brief description of what this tool does.
 
 Usage:
-    python main.py <input> [--format {text,json}] [--verbose]
+    uv run main.py <input> [--format {text,json}] [--verbose]
 
 Examples:
-    python main.py "example input"
-    python main.py "example" --format json
-    python main.py "example" --verbose
+    uv run main.py "example input"
+    uv run main.py "example" --format json
+    uv run main.py "example" --verbose
 """
 
 import argparse
@@ -20,7 +20,7 @@ from typing import Any
 # Add _shared to path for common utilities
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / '_shared'))
 try:
-    from utils import output_result, setup_logging, log_verbose
+    from utils import output_result, setup_logging, log_verbose  # type: ignore[import-not-found]
 except ImportError:
     # Fallback if _shared is not available
     def output_result(data: Any, fmt: str = 'text') -> None:
