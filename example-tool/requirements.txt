@@ -1,0 +1,6 @@
+# URL Validator dependencies
+# This tool uses only Python standard library - no additional packages required.
+# 
+# If you need additional packages, list them here:
+# requests>=2.28.0
+# validators>=0.20.0
