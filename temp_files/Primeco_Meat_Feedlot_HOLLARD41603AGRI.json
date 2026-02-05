@@ -1,6 +1,6 @@
 {
   "extraction_metadata": {
-    "extracted_at": "2026-02-05T14:28:48.644140",
+    "extracted_at": "2026-02-05T18:09:59.258118",
     "source_document": "27.11.2025 - Primeco  Meat Feedlot - HOLLARD41603AGRI - Byv Scania.pdf",
     "extraction_version": "1.0.0",
     "confidence_score": null
@@ -135,19 +135,28 @@
           "description": "Buildings as defined",
           "column_reference": "1",
           "premium": 270000.0,
-          "sum_insured": 103.5
+          "sum_insured": 103.5,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null
         },
         {
           "description": "Stock as defined",
           "column_reference": "4",
           "premium": 378000.0,
-          "sum_insured": 181.13
+          "sum_insured": 181.13,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null
         },
         {
           "description": "Miscellaneous Items as defined",
           "column_reference": "5",
           "premium": 324000.0,
-          "sum_insured": 139.73
+          "sum_insured": 139.73,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null
         }
       ],
       "additional_perils": [
@@ -169,6 +178,9 @@
         {
           "description": "Goods in Transit",
           "sum_insured": 1500000.0,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null,
           "premium": 318.0,
           "additional_notes": "Including Livestock"
         }
@@ -197,16 +209,25 @@
         {
           "description": "265 KVA Generator with smart gen starter & Accessories (Movable) R 495 000 R 2 371.88",
           "sum_insured": 495000.0,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null,
           "premium": 2371.88
         },
         {
           "description": "265 KVA Generator 3 phase with smart gen starter (Movable) R 495 000 R 2 371.88",
           "sum_insured": 495000.0,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null,
           "premium": 2371.88
         },
         {
           "description": "VSD Units & Accessories for Pivots R 540 000 R 2 587.50",
           "sum_insured": 540000.0,
+          "sum_insured_text": null,
+          "sum_insured_is_text_based": null,
+          "basis_of_valuation": null,
           "premium": 2587.5
         }
       ],
@@ -323,6 +344,10 @@
           "mcgruther_code": null,
           "description_of_use": "PRIVATE/BUSINESS",
           "type_of_cover": "COMPREHENSIVE",
+          "sum_insured": null,
+          "sum_insured_text": "Agreed Value",
+          "sum_insured_is_text_based": true,
+          "basis_of_valuation": "AGREED_VALUE",
           "premium": 3625.2,
           "sasria_premium": 892.84,
           "extras": [
@@ -1227,6 +1252,10 @@
         "mcgruther_code": null,
         "description_of_use": "PRIVATE/BUSINESS",
         "type_of_cover": "COMPREHENSIVE",
+        "sum_insured": null,
+        "sum_insured_text": "Agreed Value",
+        "sum_insured_is_text_based": true,
+        "basis_of_valuation": "AGREED_VALUE",
         "premium": 3625.2,
         "sasria_premium": 892.84,
         "extras": [

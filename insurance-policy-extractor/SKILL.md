@@ -1,5 +1,5 @@
 ---
-name: insurance-policy-extractor
+name: hollard-agri-data-extractor
 description: |
   Extract structured data from insurance policy schedules into JSON format. Use this skill when:
   (1) User provides an insurance policy schedule PDF or text and wants data extraction
