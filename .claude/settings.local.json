@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run:*)",
+      "Bash(python3:*)",
+      "Bash(curl:*)",
+      "Bash(sh)",
+      "Bash(/home/grant/.local/bin/uv run:*)",
+      "Bash(python scripts/extract_policy.py:*)",
+      "Bash(pip3 install:*)",
+      "Bash(. /etc/os-release)",
+      "Bash(echo:*)",
+      "Bash(sudo apt-get update:*)",
+      "Bash(sudo apt-get install:*)",
+      "Bash(pwsh:*)",
+      "Bash(python scripts/policy_utils.py:*)"
+    ]
+  }
+}

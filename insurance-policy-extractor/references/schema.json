@@ -1,0 +1,466 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Insurance Policy Schedule",
+  "description": "Comprehensive schema for extracting insurance policy schedule data",
+  "type": "object",
+  "required": ["policy_details", "policyholder", "sections"],
+  "properties": {
+    "extraction_metadata": {
+      "type": "object",
+      "description": "Metadata about the extraction process",
+      "properties": {
+        "extracted_at": { "type": "string", "format": "date-time" },
+        "source_document": { "type": "string" },
+        "extraction_version": { "type": "string" },
+        "confidence_score": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "policy_details": {
+      "type": "object",
+      "required": ["policy_number", "insurer_name"],
+      "properties": {
+        "insurer_name": { "type": "string" },
+        "insurer_registration_number": { "type": ["string", "null"] },
+        "insurer_vat_number": { "type": ["string", "null"] },
+        "insurer_fsp_number": { "type": ["string", "null"] },
+        "insurer_physical_address": { "type": ["string", "null"] },
+        "insurer_postal_address": { "type": ["string", "null"] },
+        "insurer_contact_phone": { "type": ["string", "null"] },
+        "insurer_contact_email": { "type": ["string", "null"] },
+        "insurer_website": { "type": ["string", "null"] },
+        "policy_number": { "type": "string" },
+        "policy_type": { 
+          "type": "string",
+          "enum": ["MONTHLY", "ANNUAL", "SHORT_TERM", "OTHER"]
+        },
+        "inception_date": { "type": "string", "format": "date" },
+        "renewal_date": { "type": ["string", "null"], "format": "date" },
+        "expiry_date": { "type": ["string", "null"], "format": "date" },
+        "period_of_insurance": {
+          "type": "object",
+          "properties": {
+            "from_date": { "type": "string", "format": "date" },
+            "to_date": { "type": "string", "format": "date" },
+            "description": { "type": ["string", "null"] }
+          }
+        },
+        "transaction_effective_date": { "type": ["string", "null"], "format": "date" },
+        "transaction_reason": { "type": ["string", "null"] },
+        "endorsement_description": { "type": ["string", "null"] },
+        "territorial_limits": { "type": ["string", "null"] },
+        "print_date": { "type": ["string", "null"], "format": "date" }
+      }
+    },
+    "policyholder": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "trading_as": { "type": ["string", "null"] },
+        "business_description": { "type": ["string", "null"] },
+        "company_registration_number": { "type": ["string", "null"] },
+        "vat_number": { "type": ["string", "null"] },
+        "id_number": { "type": ["string", "null"] },
+        "physical_address": {
+          "type": "object",
+          "properties": {
+            "line1": { "type": ["string", "null"] },
+            "line2": { "type": ["string", "null"] },
+            "line3": { "type": ["string", "null"] },
+            "city": { "type": ["string", "null"] },
+            "province_state": { "type": ["string", "null"] },
+            "postal_code": { "type": ["string", "null"] },
+            "country": { "type": ["string", "null"] },
+            "full_address": { "type": ["string", "null"] }
+          }
+        },
+        "postal_address": {
+          "type": "object",
+          "properties": {
+            "line1": { "type": ["string", "null"] },
+            "line2": { "type": ["string", "null"] },
+            "line3": { "type": ["string", "null"] },
+            "city": { "type": ["string", "null"] },
+            "province_state": { "type": ["string", "null"] },
+            "postal_code": { "type": ["string", "null"] },
+            "country": { "type": ["string", "null"] },
+            "full_address": { "type": ["string", "null"] }
+          }
+        },
+        "contact_details": {
+          "type": "object",
+          "properties": {
+            "work_phone": { "type": ["string", "null"] },
+            "home_phone": { "type": ["string", "null"] },
+            "cell_phone": { "type": ["string", "null"] },
+            "fax": { "type": ["string", "null"] },
+            "email": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "broker": {
+      "type": ["object", "null"],
+      "properties": {
+        "company_name": { "type": ["string", "null"] },
+        "branch": { "type": ["string", "null"] },
+        "broker_name": { "type": ["string", "null"] },
+        "company_registration_number": { "type": ["string", "null"] },
+        "vat_number": { "type": ["string", "null"] },
+        "fsp_number": { "type": ["string", "null"] },
+        "physical_address": { "type": ["string", "null"] },
+        "postal_address": { "type": ["string", "null"] },
+        "contact_phone": { "type": ["string", "null"] },
+        "fax": { "type": ["string", "null"] },
+        "email": { "type": ["string", "null"] }
+      }
+    },
+    "premium_summary": {
+      "type": "object",
+      "properties": {
+        "currency": { "type": "string", "default": "ZAR" },
+        "premium_frequency": {
+          "type": "string",
+          "enum": ["MONTHLY", "ANNUAL", "QUARTERLY", "OTHER"]
+        },
+        "section_premiums": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "section_name": { "type": "string" },
+              "is_selected": { "type": "boolean" },
+              "premium_amount": { "type": "number" },
+              "sasria_amount": { "type": ["number", "null"] }
+            }
+          }
+        },
+        "subtotal": { "type": ["number", "null"] },
+        "sasria_total": { "type": ["number", "null"] },
+        "broker_fee": { "type": ["number", "null"] },
+        "admin_fee": { "type": ["number", "null"] },
+        "total_premium": { "type": "number" },
+        "vat_inclusive": { "type": "boolean" },
+        "vat_rate": { "type": ["number", "null"] },
+        "broker_commission": {
+          "type": "object",
+          "properties": {
+            "total_amount": { "type": ["number", "null"] },
+            "motor_rate_percent": { "type": ["number", "null"] },
+            "non_motor_rate_percent": { "type": ["number", "null"] }
+          }
+        },
+        "sasria_commission": { "type": ["number", "null"] }
+      }
+    },
+    "risk_addresses": {
+      "type": "array",
+      "description": "All physical locations covered under this policy",
+      "items": {
+        "type": "object",
+        "properties": {
+          "address_id": { "type": "string" },
+          "description": { "type": ["string", "null"] },
+          "full_address": { "type": "string" },
+          "line1": { "type": ["string", "null"] },
+          "line2": { "type": ["string", "null"] },
+          "city": { "type": ["string", "null"] },
+          "province_state": { "type": ["string", "null"] },
+          "postal_code": { "type": ["string", "null"] },
+          "country": { "type": "string", "default": "South Africa" },
+          "applicable_sections": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "description": "All insured sections/covers in the policy",
+      "items": {
+        "type": "object",
+        "required": ["section_type", "section_name"],
+        "properties": {
+          "section_type": {
+            "type": "string",
+            "enum": [
+              "FIRE",
+              "GOODS_IN_TRANSIT",
+              "BUSINESS_ALL_RISKS",
+              "ACCIDENTAL_DAMAGE",
+              "COMBINED_LIABILITY",
+              "MOTOR_SPECIFIED",
+              "MOTOR_UNSPECIFIED",
+              "THEFT",
+              "MONEY",
+              "GLASS",
+              "FIDELITY_GUARANTEE",
+              "BUSINESS_INTERRUPTION",
+              "ELECTRONIC_EQUIPMENT",
+              "MACHINERY_BREAKDOWN",
+              "LIVESTOCK",
+              "CROP",
+              "OTHER"
+            ]
+          },
+          "section_name": { "type": "string" },
+          "effective_date": { "type": ["string", "null"], "format": "date" },
+          "risk_address": { "type": ["string", "null"] },
+          "total_section_premium": { "type": ["number", "null"] },
+          "total_section_sasria": { "type": ["number", "null"] },
+          "items": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/insured_item" }
+          },
+          "additional_perils": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/additional_peril" }
+          },
+          "section_endorsements": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/endorsement" }
+          },
+          "section_specific_data": {
+            "type": "object",
+            "description": "Section-type specific fields"
+          }
+        }
+      }
+    },
+    "motor_section": {
+      "type": ["object", "null"],
+      "description": "Detailed motor vehicle section data",
+      "properties": {
+        "vehicles": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/vehicle" }
+        },
+        "motor_endorsements": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/endorsement" }
+        }
+      }
+    },
+    "general_endorsements": {
+      "type": "array",
+      "description": "Policy-wide endorsements and clauses",
+      "items": { "$ref": "#/definitions/endorsement" }
+    },
+    "general_exclusions": {
+      "type": "array",
+      "description": "Policy-wide exclusions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "exclusion_name": { "type": "string" },
+          "exclusion_text": { "type": "string" },
+          "effective_date": { "type": ["string", "null"], "format": "date" }
+        }
+      }
+    },
+    "first_amounts_payable": {
+      "type": "object",
+      "description": "Standard excess schedules by section",
+      "additionalProperties": {
+        "type": "array",
+        "items": { "$ref": "#/definitions/excess_entry" }
+      }
+    },
+    "special_conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition_name": { "type": "string" },
+          "condition_text": { "type": "string" },
+          "applicable_sections": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "warranties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "warranty_name": { "type": "string" },
+          "warranty_text": { "type": "string" },
+          "applicable_sections": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "insured_item": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "item_id": { "type": ["string", "null"] },
+        "description": { "type": "string" },
+        "category": { "type": ["string", "null"] },
+        "sub_category": { "type": ["string", "null"] },
+        "sum_insured": { "type": ["number", "null"] },
+        "sum_insured_text": {
+          "type": ["string", "null"],
+          "description": "Original text value when sum_insured is not numeric (e.g., 'Agreed Value', 'Retail Value')"
+        },
+        "sum_insured_is_text_based": {
+          "type": ["boolean", "null"],
+          "description": "True if sum_insured contains text like 'Agreed Value' or 'Retail Value' instead of a numeric amount"
+        },
+        "limit_of_indemnity": { "type": ["number", "null"] },
+        "basis_of_valuation": {
+          "type": ["string", "null"],
+          "enum": ["REPLACEMENT_VALUE", "MARKET_VALUE", "AGREED_VALUE", "RETAIL_VALUE", "FIRST_LOSS", "DECLARATION", null]
+        },
+        "premium": { "type": ["number", "null"] },
+        "sasria_premium": { "type": ["number", "null"] },
+        "annual_premium": { "type": ["number", "null"] },
+        "monthly_premium": { "type": ["number", "null"] },
+        "column_reference": { "type": ["string", "null"] },
+        "escalator_clause_percent": { "type": ["number", "null"] },
+        "construction_details": { "type": ["string", "null"] },
+        "make": { "type": ["string", "null"] },
+        "model": { "type": ["string", "null"] },
+        "serial_number": { "type": ["string", "null"] },
+        "year": { "type": ["integer", "null"] },
+        "location": { "type": ["string", "null"] },
+        "additional_notes": { "type": ["string", "null"] },
+        "excess": { "$ref": "#/definitions/excess_entry" },
+        "item_endorsements": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/endorsement" }
+        },
+        "item_clauses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "clause_name": { "type": "string" },
+              "clause_text": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "extras": {
+          "type": "array",
+          "description": "Additional items/accessories included",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "value": { "type": ["number", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "vehicle": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "description": { "type": "string" },
+        "year": { "type": ["integer", "null"] },
+        "make": { "type": ["string", "null"] },
+        "model": { "type": ["string", "null"] },
+        "registration_number": { "type": ["string", "null"] },
+        "vin_number": { "type": ["string", "null"] },
+        "engine_number": { "type": ["string", "null"] },
+        "chassis_number": { "type": ["string", "null"] },
+        "mcgruther_code": { "type": ["string", "null"] },
+        "description_of_use": {
+          "type": ["string", "null"],
+          "enum": ["PRIVATE", "BUSINESS", "PRIVATE/BUSINESS", "AGRICULTURAL", "AGRICULTURAL ONLY", null]
+        },
+        "type_of_cover": {
+          "type": ["string", "null"],
+          "enum": ["COMPREHENSIVE", "THIRD_PARTY_FIRE_THEFT", "THIRD_PARTY_ONLY", null]
+        },
+        "sum_insured": { "type": ["number", "null"] },
+        "sum_insured_text": {
+          "type": ["string", "null"],
+          "description": "Original text value when sum_insured is not numeric (e.g., 'Agreed Value', 'Retail Value')"
+        },
+        "sum_insured_is_text_based": {
+          "type": ["boolean", "null"],
+          "description": "True if sum_insured contains text like 'Agreed Value' or 'Retail Value' instead of a numeric amount"
+        },
+        "basis_of_valuation": {
+          "type": ["string", "null"],
+          "enum": ["RETAIL_VALUE", "AGREED_VALUE", "MARKET_VALUE", null]
+        },
+        "agreed_value": { "type": ["number", "null"] },
+        "premium": { "type": ["number", "null"] },
+        "sasria_premium": { "type": ["number", "null"] },
+        "hp_company": { "type": ["string", "null"] },
+        "security_details": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "device_type": { "type": "string" },
+              "device_name": { "type": ["string", "null"] },
+              "is_required": { "type": "boolean" }
+            }
+          }
+        },
+        "additional_perils": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/additional_peril" }
+        },
+        "extras": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "description": { "type": "string" },
+              "value": { "type": ["number", "null"] }
+            }
+          }
+        },
+        "excess": { "$ref": "#/definitions/excess_entry" },
+        "vehicle_endorsements": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/endorsement" }
+        }
+      }
+    },
+    "additional_peril": {
+      "type": "object",
+      "properties": {
+        "peril_name": { "type": "string" },
+        "is_included": { "type": "boolean" },
+        "limit_of_indemnity": { "type": ["number", "null"] },
+        "premium": { "type": ["number", "null"] },
+        "excess": { "$ref": "#/definitions/excess_entry" },
+        "conditions": { "type": ["string", "null"] }
+      }
+    },
+    "endorsement": {
+      "type": "object",
+      "properties": {
+        "endorsement_name": { "type": "string" },
+        "endorsement_text": { "type": ["string", "null"] },
+        "effective_date": { "type": ["string", "null"], "format": "date" },
+        "reference_number": { "type": ["string", "null"] },
+        "column_reference": { "type": ["string", "null"] }
+      }
+    },
+    "excess_entry": {
+      "type": "object",
+      "properties": {
+        "description": { "type": "string" },
+        "percentage_of_claim": { "type": ["number", "null"] },
+        "minimum_amount": { "type": ["number", "null"] },
+        "maximum_amount": { "type": ["number", "null"] },
+        "fixed_amount": { "type": ["number", "null"] },
+        "conditions": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

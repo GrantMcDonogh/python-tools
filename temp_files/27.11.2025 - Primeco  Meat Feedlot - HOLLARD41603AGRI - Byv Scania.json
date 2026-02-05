@@ -1,0 +1,1521 @@
+{
+  "extraction_metadata": {
+    "extracted_at": "2026-02-05T14:28:48.644140",
+    "source_document": "27.11.2025 - Primeco  Meat Feedlot - HOLLARD41603AGRI - Byv Scania.pdf",
+    "extraction_version": "1.0.0",
+    "confidence_score": null
+  },
+  "policy_details": {
+    "insurer_name": null,
+    "policy_number": null,
+    "policy_type": null,
+    "inception_date": null,
+    "renewal_date": null,
+    "transaction_effective_date": null,
+    "transaction_reason": null,
+    "endorsement_description": null,
+    "territorial_limits": null,
+    "print_date": null,
+    "period_of_insurance": {
+      "from_date": "2025-11-01",
+      "to_date": "2026-10-31"
+    }
+  },
+  "policyholder": {
+    "name": null,
+    "business_description": null,
+    "vat_number": null,
+    "company_registration_number": null,
+    "physical_address": {
+      "line1": "1 Ged 5 van Bosjeshoek",
+      "line2": "THABAZIMBI",
+      "line3": "0",
+      "city": "118 KQ, Makoppa",
+      "province_state": null,
+      "postal_code": null,
+      "country": "South Africa",
+      "full_address": "1 Ged 5 van Bosjeshoek, THABAZIMBI, 118 KQ, Makoppa, 0"
+    },
+    "postal_address": {
+      "line1": "Ged 5 van Bosjeshoek 1",
+      "line2": "THABAZIMBI",
+      "line3": null,
+      "city": "118 KQ, Makoppa",
+      "province_state": null,
+      "postal_code": "0387",
+      "country": "South Africa",
+      "full_address": "Ged 5 van Bosjeshoek 1, THABAZIMBI, 118 KQ, Makoppa, 0387"
+    },
+    "contact_details": {
+      "work_phone": null,
+      "home_phone": null,
+      "cell_phone": null,
+      "fax": null,
+      "email": null
+    }
+  },
+  "broker": {
+    "company_name": null,
+    "branch": null,
+    "broker_name": null,
+    "company_registration_number": null,
+    "vat_number": null,
+    "fsp_number": null,
+    "contact_phone": null,
+    "fax": null,
+    "email": null
+  },
+  "premium_summary": {
+    "currency": "ZAR",
+    "premium_frequency": null,
+    "section_premiums": [
+      {
+        "section_name": "Fire",
+        "is_selected": true,
+        "premium_amount": null
+      },
+      {
+        "section_name": "Goods in Transit",
+        "is_selected": true,
+        "premium_amount": null
+      },
+      {
+        "section_name": "Business All Risks",
+        "is_selected": true,
+        "premium_amount": null
+      },
+      {
+        "section_name": "Motor specified",
+        "is_selected": true,
+        "premium_amount": null
+      }
+    ],
+    "subtotal": 5362.4,
+    "sasria_total": 1276.75,
+    "broker_fee": null,
+    "total_premium": 6639.15,
+    "vat_inclusive": true,
+    "broker_commission": {
+      "motor_rate_percent": 20.0,
+      "non_motor_rate_percent": 20.0
+    }
+  },
+  "risk_addresses": [
+    {
+      "address_id": "addr_1",
+      "full_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387",
+      "applicable_sections": [
+        "FIRE"
+      ]
+    },
+    {
+      "address_id": "addr_2",
+      "full_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387 Cover selected Single Transit Basis of Cover All Risk Means of Conveyance Rail, Air, Road",
+      "applicable_sections": [
+        "GOODS_IN_TRANSIT"
+      ]
+    },
+    {
+      "address_id": "addr_3",
+      "full_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387 Industry Retroactive Date 27/11/2019 Basis of Cover Claims Made",
+      "applicable_sections": [
+        "COMBINED_LIABILITY"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_type": "FIRE",
+      "section_name": "Fire",
+      "effective_date": "2025-11-28",
+      "risk_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387",
+      "total_section_premium": 2093.62,
+      "items": [
+        {
+          "description": "Buildings as defined",
+          "column_reference": "1",
+          "premium": 270000.0,
+          "sum_insured": 103.5
+        },
+        {
+          "description": "Stock as defined",
+          "column_reference": "4",
+          "premium": 378000.0,
+          "sum_insured": 181.13
+        },
+        {
+          "description": "Miscellaneous Items as defined",
+          "column_reference": "5",
+          "premium": 324000.0,
+          "sum_insured": 139.73
+        }
+      ],
+      "additional_perils": [
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nAdditional claims preparation costs No\nAdditional Geysers (as defined) No\nAdditional leakage - first loss No\nBrands and labels No\nGeyser maintenance (All Risks) No\nRiot and strike No\nSubsidence and landslip (extended cover) No\nTemperature all risk clause No\nWild animals (buildings) No\nWild animals (contents)",
+          "is_included": false,
+          "limit_of_indemnity": null
+        }
+      ],
+      "section_endorsements": []
+    },
+    {
+      "section_type": "GOODS_IN_TRANSIT",
+      "section_name": "Goods In Transit",
+      "effective_date": "2025-11-28",
+      "risk_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387 Cover selected Single Transit Basis of Cover All Risk Means of Conveyance Rail, Air, Road",
+      "total_section_premium": 368.0,
+      "items": [
+        {
+          "description": "Goods in Transit",
+          "sum_insured": 1500000.0,
+          "premium": 318.0,
+          "additional_notes": "Including Livestock"
+        }
+      ],
+      "additional_perils": [
+        {
+          "peril_name": "Additional",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nAdditional claims preparation costs No\nDebris Removal No\nAdditional Fire Extinguishing Charges No\nHijacking of Conveying Vehicle Yes R -\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        }
+      ],
+      "section_endorsements": []
+    },
+    {
+      "section_type": "BUSINESS_ALL_RISKS",
+      "section_name": "Business All Risks",
+      "effective_date": "2025-11-28",
+      "risk_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387",
+      "total_section_premium": 7391.28,
+      "items": [
+        {
+          "description": "265 KVA Generator with smart gen starter & Accessories (Movable) R 495 000 R 2 371.88",
+          "sum_insured": 495000.0,
+          "premium": 2371.88
+        },
+        {
+          "description": "265 KVA Generator 3 phase with smart gen starter (Movable) R 495 000 R 2 371.88",
+          "sum_insured": 495000.0,
+          "premium": 2371.88
+        },
+        {
+          "description": "VSD Units & Accessories for Pivots R 540 000 R 2 587.50",
+          "sum_insured": 540000.0,
+          "premium": 2587.5
+        }
+      ],
+      "additional_perils": [
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nBurglar Alarm Warranty",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nBurglar Alarm Warranty",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nBurglar Alarm Warranty",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nAdditional claims preparation costs",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "barrels No\nand containers)\nContamination of milk No\nRiot and strike No\nRiot and strike No\nIncreased Cost of Working",
+          "is_included": false,
+          "limit_of_indemnity": null
+        }
+      ],
+      "section_endorsements": []
+    },
+    {
+      "section_type": "ACCIDENTAL_DAMAGE",
+      "section_name": "Accidental Damage",
+      "effective_date": "2025-11-28",
+      "risk_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387",
+      "total_section_premium": 62.5,
+      "items": [],
+      "additional_perils": [
+        {
+          "peril_name": "Memoranda\nExcluded Property Note excluded items here\nReinstatement as stated in the policy",
+          "is_included": true,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "No\nwording\nFirst Loss average as stated in the",
+          "is_included": true,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nAdditional claims preparation costs",
+          "is_included": false,
+          "limit_of_indemnity": null
+        }
+      ],
+      "section_endorsements": []
+    },
+    {
+      "section_type": "COMBINED_LIABILITY",
+      "section_name": "Combined Liability",
+      "effective_date": "2025-11-28",
+      "risk_address": "1 Ged 5 Van Bosjeshoek,Thabazimbi, 118 Kq, Makoppa, 0387 Industry Retroactive Date 27/11/2019 Basis of Cover Claims Made",
+      "total_section_premium": 181.76,
+      "items": [],
+      "additional_perils": [
+        {
+          "peril_name": "Extended Cover\nDescription Included Limit of Indemnity Premium Specified First Amount(s)\nPayable\nAdditional claims preparation costs No\nAdditional Statutory Defence Costs",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability No\nFire extinguishing charges or water No\nbombing costs by means of aircraft\nGuesthouses (accommodation and No\nlodging)\nInefficacy (Excluding Wine and Related No\nProducts)\nLiability consequent upon the bursting and No\noverflowing of a dam wall\nProducts Liability - North American No\njurisdiction extension clause\nProduct Recall No\nProducts Guarantee No\nSpread of Fire",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s liability",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s liability (Not applicable",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Related products only)\nAdditional Wrongful Arrest",
+          "is_included": false,
+          "limit_of_indemnity": null
+        }
+      ],
+      "section_endorsements": [],
+      "section_specific_data": {
+        "retroactive_date": "2019-11-27",
+        "basis_of_cover": "Claims Made"
+      }
+    },
+    {
+      "section_type": "MOTOR_SPECIFIED",
+      "section_name": "Motor Specified",
+      "effective_date": "2025-11-28",
+      "risk_address": null,
+      "total_section_premium": 42486.98,
+      "items": [
+        {
+          "description": "2021 MERCEDES-BENZ KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C",
+          "year": 2021,
+          "make": "MERCEDES-BENZ",
+          "model": "KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C",
+          "registration_number": "KVL678NW",
+          "vin_number": null,
+          "engine_number": "Number",
+          "mcgruther_code": null,
+          "description_of_use": "PRIVATE/BUSINESS",
+          "type_of_cover": "COMPREHENSIVE",
+          "premium": 3625.2,
+          "sasria_premium": 892.84,
+          "extras": [
+            {
+              "description": "Aerokit",
+              "value": 40000.0
+            },
+            {
+              "description": "Hydraulics",
+              "value": 35000.0
+            }
+          ],
+          "additional_perils": [],
+          "full_description": "2021 MERCEDES-BENZ KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C"
+        }
+      ],
+      "additional_perils": [
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury No\nliability\nUnspecified agricultural implements",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail value No\nRiot and strike No\nSpare wheel and tools first amount",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury No\nliability\nUnspecified agricultural implements",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nWaiver of basic compulsory first amount",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContents of spraying equipment No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Days) No\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nUnspecified agricultural implements No\nAdditional Damage to tyres and tracks No\nAdditional",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "R -\nliability\nAdditional",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "central No\nlocking devices and remotes\nAdditional Parking Facilities and No\nmovement of third-party vehicles\nAdditional Wreckage Removal No\nCaravans hired out No\nContingent liability",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        },
+        {
+          "peril_name": "of Retail value",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "of Retail Value\nElectronic Equipment used for precision No\nfarming\nPassenger liability - clients No\nPassenger liability - employees No\nRiot and strike",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "Liability to Third Parties",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "explosion limitation",
+          "is_included": false,
+          "limit_of_indemnity": null
+        },
+        {
+          "peril_name": "s personal injury",
+          "is_included": true,
+          "limit_of_indemnity": 2500000.0
+        }
+      ],
+      "section_endorsements": []
+    }
+  ],
+  "motor_section": {
+    "vehicles": [
+      {
+        "description": "2021 MERCEDES-BENZ KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C",
+        "year": 2021,
+        "make": "MERCEDES-BENZ",
+        "model": "KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C",
+        "registration_number": "KVL678NW",
+        "vin_number": null,
+        "engine_number": "Number",
+        "mcgruther_code": null,
+        "description_of_use": "PRIVATE/BUSINESS",
+        "type_of_cover": "COMPREHENSIVE",
+        "premium": 3625.2,
+        "sasria_premium": 892.84,
+        "extras": [
+          {
+            "description": "Aerokit",
+            "value": 40000.0
+          },
+          {
+            "description": "Hydraulics",
+            "value": 35000.0
+          }
+        ],
+        "additional_perils": [],
+        "full_description": "2021 MERCEDES-BENZ KVL678NW ABJ96342460470662 460972U1067343 44080902\nACTROS 2645LS/33 PURE\n6X4 A/T T/T C/C"
+      }
+    ]
+  },
+  "general_endorsements": [
+    {
+      "endorsement_name": "GENERAL ENDORSEMENTS\nFIRST AMOUNTS PAYABLE",
+      "endorsement_text": "In the event of the specified first amount payable not being stated on the specific section, the first amount(s) payable noted on the Schedule of Standard First Amounts Payable, attached to and forming part of this Policy document, will be applicable. Towing and Release Fees Limitation If the insured vehicle is disabled by reasons of any loss or damage insured hereby, the Company will pay the reasonable cost of protection and removal to the nearest repairers; PROVIDED THAT:- the services of the ",
+      "effective_date": null
+    },
+    {
+      "endorsement_name": "GENERAL EXCEPTIONS",
+      "endorsement_text": "General Exception 8. Electricity Grid Failure exclusion is added which reads as follows: 8. Electricity Grid Failure exclusion Notwithstanding any provision of any section of this Policy including any Exclusion, Condition, Exception, Insured Peril, Extension or other provision not mentioned herein, this Policy does not cover any loss, damage/s (physical or financial), cost or expense of any type whatsoever, legal liability, or any consequential loss directly or indirectly caused by, attributable",
+      "effective_date": null
+    },
+    {
+      "endorsement_name": "GENERAL EXCLUSION",
+      "endorsement_text": "NON-PHYSICAL DAMAGE BUSINESS INTERRUPTION AND CONTINGENT BUSINESS INTERRUPTION Notwithstanding any specific provision of a specific section of this policy including any exclusion, condition, exception, insured peril, extension or other provision not mentioned herein which specifically overrides a general exclusion, this policy does not cover any loss, damage/s (physical or financial), cost or expense of any type whatsoever, legal liability, or any consequential loss directly or indirectly caused",
+      "effective_date": null
+    }
+  ],
+  "general_exclusions": [],
+  "first_amounts_payable": {
+    "Fire": [
+      {
+        "description": "Standard",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "An area of at least 5 or 10 meters wide must be kept free",
+        "percentage_of_claim": 15.0,
+        "minimum_amount": 0.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Standard Construction",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Non-standard Construction (Including Thatch)",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Solar Panels and all related Equipment",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Standard Construction",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Non-standard Construction (Including Thatch)",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Damage to contents in any unoccupied private home",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      }
+    ],
+    "Theft": [
+      {
+        "description": "Standard",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Standard",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Any subsequent claim within any 12 month period applicable",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 10000.0,
+        "maximum_amount": null
+      }
+    ],
+    "Business": [
+      {
+        "description": "Deterioration of Stock - Wine Cellars",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Deterioration of Stock - Other than wine cellars",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Sub-section A - Property",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Sub-section B - Liability",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 5000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Sub-section C - Accidental Damage",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      }
+    ],
+    "Money": [
+      {
+        "description": "Major Limit",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 750.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Collectors/Roundsman",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Hold-up",
+        "percentage_of_claim": 20.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Locks and keys",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Riot and strike",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      }
+    ],
+    "Glass": [
+      {
+        "description": "Standard",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 750.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Riot and strike",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      }
+    ],
+    "Goods": [
+      {
+        "description": "Standard",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      }
+    ],
+    "Combined": [
+      {
+        "description": "Public Liability",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Products Liability/Defective Workmanship",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Work Away",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Standard",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 0.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Standard",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 0.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Medical Expenses",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 250.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Medical Expenses",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 250.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Medical Expenses",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 250.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Medical Expenses",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 250.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Medical Expenses",
+        "percentage_of_claim": 0.0,
+        "minimum_amount": 500.0,
+        "maximum_amount": null
+      }
+    ],
+    "Motor": [
+      {
+        "description": "Sub-section A (Basic)",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      }
+    ],
+    "Electronic": [
+      {
+        "description": "Standard",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 750.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Laptops/Notebooks/Tablets (per item)",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 1000.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Software",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 750.0,
+        "maximum_amount": null
+      },
+      {
+        "description": "Machinery Breakdown",
+        "percentage_of_claim": 10.0,
+        "minimum_amount": 2500.0,
+        "maximum_amount": null
+      }
+    ]
+  },
+  "special_conditions": [],
+  "warranties": []
+}
